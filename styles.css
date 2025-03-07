@@ -1,0 +1,4 @@
+/* styles.css */
+[data-testid="stAppViewContainer"] {
+  background: linear-gradient(to left, #1A1A1A, #1E90FF);
+}

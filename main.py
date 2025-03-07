@@ -7,7 +7,11 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_community.vectorstores import FAISS
 from langchain_groq import ChatGroq
 
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
+local_css("styles.css")
 
 custom_prompt_template = """
 Use the pieces of information provided in the context to answer user's question.
